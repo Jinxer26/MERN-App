@@ -17,7 +17,7 @@ export const useUpdate = () => {
     }
 
     console.log(JSON.stringify(data))
-    const response = await fetch('/api/user/update', {
+    const response = await fetch('https://mern-backend-o7vi.onrender.com/api/user/update', {
       method: 'POST',
       headers: {'Authorization' : `Bearer ${user.token}`,
                 'Content-Type': 'application/json'},
